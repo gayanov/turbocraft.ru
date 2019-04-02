@@ -52,9 +52,25 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', ''),
 
+    'favicion_ico' => env('FAVICION_ICO', ''),
     'asset_url' => env('ASSET_URL', null),
+
+    'vk' => [
+        'admin_url' => env('VK_ADMIN_URL'),
+        'group_url' => env('VK_GROUP_URL'),
+        'send_message_url' => env('VK_GROUP_SEND_MESSAGE_URL'),
+    ],
+
+    'server' => [
+        'ip' => env('SERVER_IP'),
+        'port' => env('SERVER_PORT', 25565)
+    ],
+
+    /*'server_ip' => env('SERVER_IP', 'localhost'),
+    'server_port' => env('SERVER_PORT', 25565),
+    'server_ip_is_srv' => env('SERVER_IP_IS_SRV', false),*/
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +83,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Moscow',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +96,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +109,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------
@@ -163,8 +179,13 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * For developing in phpStorm
+         */
+        //Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        /*
          * Package Service Providers...
          */
+        Maksa988\UnitPay\UnitPayServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -191,7 +212,6 @@ return [
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
-        'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
@@ -221,10 +241,14 @@ return [
         'Schema' => Illuminate\Support\Facades\Schema::class,
         'Session' => Illuminate\Support\Facades\Session::class,
         'Storage' => Illuminate\Support\Facades\Storage::class,
-        'Str' => Illuminate\Support\Str::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        /*
+         * Another packages
+         */
+        'UnitPay' => Maksa988\UnitPay\Facades\UnitPay::class,
 
     ],
 

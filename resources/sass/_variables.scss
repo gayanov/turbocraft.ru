@@ -1,11 +1,18 @@
-
 // Body
-$body-bg: #f8fafc;
+$body-bg: #fff !default;
+$body-img: url('../images/top-bg1.jpg');
 
 // Typography
 $font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
+$line-weight-base: 400;
 $line-height-base: 1.6;
+
+//Badge
+$badge-font-size:                   85% !default;
+
+//Alert
+$danger:        #d9534f !default;
 
 // Colors
 $blue: #3490dc;
