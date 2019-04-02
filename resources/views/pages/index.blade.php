@@ -82,15 +82,15 @@
                 <div class="countdown-stock">
                     <h3 class="text-center">Осталось до завершения акции: </h3>
                     <div id="countdown_event" class="countdown countdown__color-circles d-sm-flex justify-content-center">
-                        <div id="hours" class="holder col-sm-3">
-                            <div class="hours-count number">0</div>
+                        <div class="holder col-sm-3">
+                            <div class="hours-count number second">0</div>
                             <div class="hours-label desc">часов</div>
                         </div>
-                        <div id="mins" class="holder col-sm-3">
-                            <div class="mins-count number">0</div>
+                        <div class="holder col-sm-3">
+                            <div class="mins-count number third">0</div>
                             <div class="mins-label desc">минут</div></div>
-                        <div id="secs" class="holder col-sm-3">
-                            <div class="secs-count number">0</div>
+                        <div class="holder col-sm-3">
+                            <div class="secs-count number four">0</div>
                             <div class="secs-label desc">секунд</div>
                         </div>
                     </div>
