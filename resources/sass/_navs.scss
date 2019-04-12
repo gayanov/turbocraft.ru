@@ -1,3 +1,16 @@
 .nav-tabs {
   background-color: #dee2e6;
 }
+
+.form-control {
+  padding: .5rem .75rem;
+  font-size: 1.063rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
